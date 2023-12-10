@@ -1,0 +1,86 @@
+body, html{
+	color: #FFF !important;
+	height:100% !important;
+}
+
+body {
+    background-image: url("../img/groupblack.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+input[type=radio] {
+    display: none;
+}
+.container{
+	height:auto !important;
+}
+.container2{
+    height:auto !important;
+    opacity: 1;
+}
+.timeBox > label{
+	display: none;
+	margin:6px;
+	padding: 6px 12px;
+    color: #fff;
+	border: 1px solid #FFF;
+    border-radius: 5px;
+}
+.timeBox > label:hover {
+    background-color: white;
+	color: #444;
+}
+.title {
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.label-padding {
+    padding-top: 7px;
+}
+
+.paragraph-margin {
+    margin-left: 7em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.heading-margin {
+    margin-left: 5.4em;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.col-title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.selected {
+    background-color: white;
+    color: #444 !important;
+}
+
+.nonselectable {
+    color: #888;
+}
+
+.selectable {
+    color: #eee;
+    font-weight: bold;
+}
+
+.selectable:hover {
+    background-color: #777;
+    color: #FFF;
+}
+
+.signup-overlay {
+    background-color: rgba(0,0,0,0.75);
+    padding-top: 8%;
+    height: 100%;
+}

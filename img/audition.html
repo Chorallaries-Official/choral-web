@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Auditions Signup</title>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/signup.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/audition-fe.js"></script>
+
+    <!-- Chorallaries Icon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+  	<!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">THE CHORALLARIES</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://web.mit.edu/choral/www/index.html" class="page-scroll">Home</a></li>
+            <li><a href="http://web.mit.edu/choral/www/index.html#tf-about" class="page-scroll">Welcome</a></li>
+            <li><a href="" class="page-scroll">Audition</a></li>
+            <li><a href="http://web.mit.edu/choral/www/index.html#tf-services" class="page-scroll">Members</a></li>
+            <li><a href="http://web.mit.edu/choral/www/index.html#tf-contact" class="page-scroll">Booking</a></li>
+            <li><a href="http://web.mit.edu/choral/www/index.html#tf-works" class="page-scroll">Media</a></li>
+            <!--<li><a href="#tf-testimonials" class="page-scroll">Testimonials</a></li>-->
+
+            <!--<li><a href="#tf-contact" class="page-scroll">Contact</a></li>-->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="container signup-overlay">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="title" id="main-title">Audition for the Chorallaries!</h1>
+		  <h1 class="title" style="display:none" id="end-title">Auditioning for the Chorallaries!</h1>
+          <h1 class="title">SPRING 2021</h1>
+        </div>
+      </div>
+
+      <div id="sign-up" class="row">
+
+        <div class="col-md-6">
+          <h2 class="col-title">Sign up</h2>
+          <p class="paragraph-margin">Welcome! Please select an available time slot.</p>
+          <h4 class="heading-margin">Preparation</h4>
+          <p class="paragraph-margin">Each audition is about 10 minutes long and includes a range check followed by a solo of your choice. The solo should be about 1 minute in length, or about a verse and a chorus. This is where you really get to strut your stuff, so pick a song that really shows off your voice! This solo is the only thing you need to prepare in advance. If you have any questions, just email us at choral-info@mit.edu!</p>
+          <form id="audform" class="form-horizontal" role="form" data-toggle="validator">
+			</div>
+			<div class="row" id="r2">
+	            <div class="col-md-6">
+				
+				  <h4 id="friday" style="display:none" class="heading">Friday</h4>
+	              <div id="schedule">
+				  
+				  	<!-- Calendly inline widget begin -->
+					<div class="calendly-inline-widget" data-url="https://calendly.com/chorallaries/2021-spring-chorallaries-auditions?background_color=fa0606&text_color=fffcfc&primary_color=06090b" style="min-width:320px;height:630px;"></div>
+					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+					<!-- Calendly inline widget end -->
+				  
+				  </div>
+	            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- EVERYTHING BELOW HERE USED TO BE THE OLD HTML for a DATABASE Audition Integration -->
+
+
+
+
+
+ <!--  <div class="container signup-overlay">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="title" id="main-title">Audition for the Chorallaries!</h1>
+		  <h1 class="title" style="display:none" id="end-title">Auditioning for the Chorallaries!</h1>
+          <h1 class="title">FALL 2020</h1>
+        </div>
+      </div>
+
+      <div id="sign-up" class="row">
+
+        <div class="col-md-6">
+          <h2 class="col-title">Sign up</h2>
+          <p class="paragraph-margin">Welcome! Please select an available time slot. To change your time slot, simply fill out the form again using the same kerberos :)</p>
+          <h4 class="heading-margin">Preparation</h4>
+          <p class="paragraph-margin">Each audition is 7 minutes long, including a few warm-ups followed by a solo of your choice. This is where you really get to strut your stuff, so pick a song that really shows off your voice! The solo is the only thing you need to prepare in advance. If you have any questions, just email us at choral-info@mit.edu! Please note that if you are participating in sorority recruitment, sign up for a slot on Friday, as the Saturday slots conflict with recruitment.</p>
+          <form id="audform" class="form-horizontal" role="form" data-toggle="validator">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="name">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name" placeholder="ex. Larry Khoral" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="kerberos">Kerberos:</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="kerberos" name="kerberos" placeholder="ex. larryk" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <label class="col-sm-2 label-padding">
+                @mit.edu
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="year">Year:</label>
+              <div class="col-sm-10">
+                <select class="form-control" name="year" id="year" required>
+                  <option>2024</option>
+                  <option>2023</option>
+                  <option>2022</option>
+                  <option>2021</option>
+                  <option>Grad</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button id="submitBtn" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+			</div>
+			<div class="row" id="r2">
+            <div class="col-md-6">
+			
+			  <h4 id="friday" style="display:none" class="heading">Friday</h4>
+              <div id="schedule">
+			  
+			  <style type='text/css'> width: 100%;
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-moz-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-ms-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-moz-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-o-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				.uil-ripple-css {
+				  background: none;
+				  margin: auto;
+				  width: 500px;
+				  height: 500px;
+				}
+				.uil-ripple-css div {
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  margin: 0;
+				  width: 0;
+				  height: 0;
+				  opacity: 0;
+				  border-radius: 50%;
+				  border-width: 12px;
+				  border-style: solid;
+				  -ms-animation: uil-ripple 2s ease-out infinite;
+				  -moz-animation: uil-ripple 2s ease-out infinite;
+				  -webkit-animation: uil-ripple 2s ease-out infinite;
+				  -o-animation: uil-ripple 2s ease-out infinite;
+				  animation: uil-ripple 2s ease-out infinite;
+				}
+				.uil-ripple-css div:nth-of-type(1) {
+				  border-color: #ca010b;
+				}
+				.uil-ripple-css div:nth-of-type(2) {
+				  border-color: #00000;
+				  -ms-animation-delay: 1s;
+				  -moz-animation-delay: 1s;
+				  -webkit-animation-delay: 1s;
+				  -o-animation-delay: 1s;
+				  animation-delay: 1s;
+				}
+				 </style> <div id="loading" class='uil-ripple-css' style='transform:scale(1);'><div></div><div></div></div>
+			  
+			  </div>
+			  
+            </div>
+			
+						<div class="col-md-6">
+			<h4 id="saturday" style="display:none" class="heading">Saturday</h4>
+			  <div id="schedule2">
+			  <style type='text/css'> width: 100%;
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-moz-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-ms-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-moz-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-webkit-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@-o-keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				@keyframes uil-ripple {
+				  0% {
+					width: 0;
+					height: 0;
+					opacity: 0;
+					margin: 0 0 0 0;
+				  }
+				  33% {
+					width: 44%;
+					height: 44%;
+					margin: -22% 0 0 -22%;
+					opacity: 1;
+				  }
+				  100% {
+					width: 88%;
+					height: 88%;
+					margin: -44% 0 0 -44%;
+					opacity: 0;
+				  }
+				}
+				.uil-ripple-css {
+				  background: none;
+				  margin: auto;
+				  width: 500px;
+				  height: 500px;
+				}
+				.uil-ripple-css div {
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  margin: 0;
+				  width: 0;
+				  height: 0;
+				  opacity: 0;
+				  border-radius: 50%;
+				  border-width: 12px;
+				  border-style: solid;
+				  -ms-animation: uil-ripple 2s ease-out infinite;
+				  -moz-animation: uil-ripple 2s ease-out infinite;
+				  -webkit-animation: uil-ripple 2s ease-out infinite;
+				  -o-animation: uil-ripple 2s ease-out infinite;
+				  animation: uil-ripple 2s ease-out infinite;
+				}
+				.uil-ripple-css div:nth-of-type(1) {
+				  border-color: #ca010b;
+				}
+				.uil-ripple-css div:nth-of-type(2) {
+				  border-color: #00000;
+				  -ms-animation-delay: 1s;
+				  -moz-animation-delay: 1s;
+				  -webkit-animation-delay: 1s;
+				  -o-animation-delay: 1s;
+				  animation-delay: 1s;
+				}
+			  
+			  </div>
+			  </div></div>
+
+			
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+ -->
